@@ -1,0 +1,130 @@
+@import "wt-colors.css";
+
+.wt-primary {
+    background-color: var(--wt-primary);
+}
+
+.wt-secondary {
+    background-color: var(--wt-secondary);
+}
+
+.wt-tertiary {
+    background-color: var(--wt-tertiary);
+}
+
+.wt-text-white {
+    color: var(--wt-white);
+}
+
+.wt-text-black {
+    color: var(--wt-black);
+}
+
+.wt-grid {
+    display: grid;
+    grid-template-areas: "wt-sidebar wt-board wt-board wt-board";
+    grid-column-gap: 20px;
+    grid-template-columns: minmax(200px, 300px) auto;
+    padding: 20px;
+}
+
+.wt-sidebar {
+    grid-area: wt-sidebar;
+}
+
+.wt-sidebar .divider {
+    margin: 16px 0 0 0;
+}
+
+.wt-board {
+    padding: 0 16px;
+    grid-area: wt-board;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 20px;
+}
+
+.wt-list {
+    list-style: none;
+    padding: 0;
+    height: 100vh;
+    min-width: 310px;
+}
+
+.wt-btn {
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px !important;
+    cursor: pointer;
+}
+
+.wt-btn:active {
+    opacity: 90%;
+    transition-duration: 0.3s;
+}
+
+.wt-btn-clear {
+    background: none;
+}
+
+#wt-projects .wt-btn {
+    width: 100%;
+    margin: 8px 0;
+}
+
+#wt-projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#wt-projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.wt-project {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.wt-project a {
+    padding: 16px;
+    color: var(--wt-black);
+    font-weight: 600;
+    display: block;
+    background-color: var(--wt-gray);
+    border-radius: 10px;
+}
+
+.wt-project a:hover {
+    background-color: var(--wt-gray-2);
+    transition-duration: 0.3s;
+}
+
+.wt-project #wt-open-project {
+    background-color: var(--wt-gray-2);
+}
+
+#wt-board {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.wt-card {
+    background-color: var(--wt-white);
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.wt-card-title {
+    font-weight: 600;
+    font-size: 18px !important;
+}
+
+.wt-card-id {
+
+}

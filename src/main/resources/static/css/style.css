@@ -1,0 +1,24 @@
+@import "wt-colors.css";
+
+body {
+    background-color: var(--wt-gray);
+}
+
+body * {
+    font-family: sans-serif !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.scrollable {
+    overflow-y: scroll;
+}
+
+.divider {
+    display: block;
+    border-top: 1px solid var(--wt-gray-2);
+    border-radius: 10px;
+    margin: 16px 0;
+}
